@@ -1,5 +1,5 @@
 import { Button } from "@/components/Button";
-import { ArrowRight, Download, Github, Linkedin } from "lucide-react";
+import { ArrowRight, Download, Github, Linkedin, Twitter } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 
 export const Hero = () => {
@@ -72,11 +72,21 @@ export const Hero = () => {
             </div>
 
             {/* Social Links */}
-            <div>
-              <span>Follow:</span>
-              {[{ icon: Github, href: "https://github.com/inno-stack" }]}
-              {[{ icon: Linkedin, href: "#" }]}
-              {[{ icon: Twitter, href: "#" }]}
+            <div className="flex items-center gap-4 animation-delay-400">
+              <span className="text- text-muted-foreground animate-fade-in">Follow me:</span>
+              {[
+                { icon: Github, href: "https://github.com/inno-stack" },
+                { icon: Linkedin, href: "#" },
+                { icon: Twitter, href: "#" },
+              ].map((social, idx) => (
+                <a
+                  key={idx}
+                  href={social.href}
+                  className="p-2 rounded-full glass hover:bg-primary/20 hover:text-primary transition-all duration-300"
+                >
+                  {<social.icon className="w-7 h-7" />}
+                </a>
+              ))}
             </div>
           </div>
           {/* Right Column - Profile */}
