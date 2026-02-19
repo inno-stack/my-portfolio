@@ -38,7 +38,7 @@ export const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* left Column - Text Content */}
           <div className="space-y-8">
-            <div className="animate-fade-in">
+            <div className="animate-fade-in text-3xl">
               <span className="inline-flex items-center gap-2 px-2 py-2 rounded-full glass text-primary">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
                 Software Engineer
@@ -48,8 +48,8 @@ export const Hero = () => {
             {/* Hero Headline */}
 
             <div className="space-y-4">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
-                Crafting<span className="text-primary glow-text">digital</span>
+              <h1 className="text-5xl md:text-6xl lg:text-6xl font-bold leading-tight animate-fade-in animation-delay-100">
+                Crafting<span className="text-primary glow-text"> digital</span>
                 <br />
                 Experinces with
                 <br />
@@ -57,10 +57,10 @@ export const Hero = () => {
                   Precision.
                 </span>
               </h1>
-              <p className=" text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
+              <p className=" text-3xl text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
                 Hi I'm Izuchukwu Innocent - a software engineer specializing in
                 Javascript, React, Next.js, and TypeScript. I build scalable,
-                performant web applications that users love.
+                performant web applications.
               </p>
             </div>
             {/* CTAs */}
@@ -73,7 +73,9 @@ export const Hero = () => {
 
             {/* Social Links */}
             <div className="flex items-center gap-4 animation-delay-400">
-              <span className="text- text-muted-foreground animate-fade-in">Follow me:</span>
+              <span className="text- text-muted-foreground animate-fade-in">
+                Follow me:
+              </span>
               {[
                 { icon: Github, href: "https://github.com/inno-stack" },
                 { icon: Linkedin, href: "#" },
@@ -89,7 +91,26 @@ export const Hero = () => {
               ))}
             </div>
           </div>
-          {/* Right Column - Profile */}
+          {/* Right Column - Profile  image */}
+          <div className="relative animate-fade-in animation-delay-300">
+            {/* Profile image */}
+            <div className="relative max-w-xs mx-auto">
+              <div
+                className="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary/30
+               via-transparent to-primary/10 blur-2xl animate-pulse"
+              />
+              <div className="relative glass rounded-3xl p-2 glow-border">
+                <img
+                  src="/profile01.png"
+                  alt="Izuchukwu Innocent"
+                  className="w-full aspect-[4/6] object-cover rounded-3xl shadow-xl shadow-primary"
+                />
+                {/* Floating Badge */}
+                {/* State Badge */}
+              </div>
+            </div>
+          </div>
+          <div></div>
         </div>
       </div>
     </section>

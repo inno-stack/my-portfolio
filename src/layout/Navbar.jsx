@@ -18,7 +18,7 @@ export const Navbar = () => {
           href="#"
           className="text-xl font-bold tracking-tight hover:text-primary"
         >
-          IN<span className="text-primary">.</span>
+          INNOMEX<span className="text-primary">.</span>
         </a>
 
         {/* Desktop Nav */}
@@ -28,7 +28,7 @@ export const Navbar = () => {
               <a
                 href={link.href}
                 key={index}
-                className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground rounded-full hover:bg-surface"
+                className="px-4 py-2 text-2xl text-muted-foreground hover:text-foreground rounded-full hover:bg-surface"
               >
                 {link.label}
               </a>
@@ -38,7 +38,7 @@ export const Navbar = () => {
 
         {/* CTA Button */}
         <div className="hidden md:block">
-          <Button size="sm">Contact Me</Button>
+          <Button size="lg">Contact Me</Button>
         </div>
         {/* Mobile Menu Button*/}
         <button
