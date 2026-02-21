@@ -3,8 +3,9 @@ import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 
 const projects = [
   {
-    title: "Fintech Dashboard",
-    description: "A comprehensive financial analytics platform",
+    title: "Sneakers E-commerce Website",
+    description:
+      "A modern responsive e-commerce website that showcases a clean product page design with an interactive image gallery, shopping cart functionality and mobile-first responsive design.",
     image: "/projects/project1.png",
     tags: ["React", "Typescript", "Tailwind CSS"],
     link: "https://sneakers-e-commerce-livid.vercel.app/",
@@ -12,17 +13,17 @@ const projects = [
   },
 
   {
-    title: "Fintech Dashboard",
-    description: "A comprehensive financial analytics platform",
+    title: "Spot App Project",
+    description: "This project is a collaborative web page platform",
     image: "/projects/project2.png",
-    tags: ["React", "Typescript", "Tailwind CSS"],
+    tags: ["HTML", "CSS", "JavaScript"],
     link: "https://group-6-insta-spot-assignment.vercel.app/",
     github: "https://github.com/A4adella/Group-6-insta-spot-assignment",
   },
 
   {
-    title: "Fintech Dashboard",
-    description: "A comprehensive financial analytics platform",
+    title: "Payment Card App",
+    description: "A comprehensive Payment Card platform",
     image: "/projects/project3.png",
     tags: ["React", "Typescript", "Tailwind CSS"],
     link: "https://my-card-five.vercel.app/",
@@ -30,8 +31,8 @@ const projects = [
   },
 
   {
-    title: "Fintech Dashboard",
-    description: "A comprehensive financial analytics platform",
+    title: "Modern Sign-Up validation",
+    description: "A comprehensive modern Sign-Up design with validation",
     image: "/projects/project4.png",
     tags: ["React", "Typescript", "Tailwind CSS"],
     link: "https://modern-signup-three.vercel.app/index.html",
@@ -55,12 +56,12 @@ export const Projects = () => {
             Projects that
             <span className="font-serif italic font-normal text-white">
               {" "}
-              make an impact.
+              deliver real results.
             </span>
           </h2>
           <p className="text-muted-foreground animate-fade-in animation-delay-200">
-            A selection of my recent work, from complex web applications to
-            innovation tools that solve real-world problems.
+            A collection of my latest projects, from advanced web applications
+            to practical solutions addressing real problems.
           </p>
         </div>
 
