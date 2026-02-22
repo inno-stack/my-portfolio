@@ -74,7 +74,7 @@ export const Hero = () => {
                   Precision.
                 </span>
               </h1>
-              <p className=" text-3xl text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
+              <p className=" text-3xl text-gray-300 max-w-lg animate-fade-in animation-delay-200">
                 Hi I'm Izuchukwu Innocent - a software engineer specializing in
                 Javascript, React, Next.js, and TypeScript. I build scalable,
                 performant web applications.
@@ -85,10 +85,16 @@ export const Hero = () => {
               <Button size="lg">
                 Contact Me <ArrowRight className="w-5 h-5" />
               </Button>
-              <AnimatedBorderButton>
-                <Download className="w-5 h-5" />
-                Download CV
-              </AnimatedBorderButton>
+              <a
+                href="/cv.pdf"
+                download="Izuchukwu-Innocent-CV.pdf"
+                className="cursor-pointer"
+              >
+                <AnimatedBorderButton>
+                  <Download className="w-5 h-5 " />
+                 <span className="cursor-pointer">Download CV</span>
+                </AnimatedBorderButton>
+              </a>
             </div>
 
             {/* Social Links */}

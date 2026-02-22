@@ -14,7 +14,7 @@ export const AnimatedBorderButton = ({children}) => {
       {/* Download CV Button */}
       {/* Animated SVG Border */}
       <svg
-        className="absolute left-0 top-0 inset-0 w-full h-full pointer-events-none"
+        className="absolute left-0 top-0 inset-0 w-full h-full cursor-pointer"
         viewBox="0 0 200 60"
         preserveAspectRatio="none"
         style={{overflow: "visible"}}

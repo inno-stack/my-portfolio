@@ -27,6 +27,11 @@
   html {
     scroll-behavior: smooth;
   }
+
+  button{
+    cursor: pointer;
+  }
+
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
