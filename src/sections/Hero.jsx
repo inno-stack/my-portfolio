@@ -19,7 +19,18 @@ const skills = [
   "GitHub",
 ];
 
+import React, { useState } from "react";
+
 export const Hero = () => {
+  const [dots] = useState(() =>
+    Array.from({ length: 30 }).map(() => ({
+      left: `${Math.random() * 100}%`,
+      top: `${Math.random() * 100}%`,
+      animationDuration: `${15 + Math.random() * 20}s`,
+      animationDelay: `${Math.random() * 5}s`,
+    })),
+  );
+
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Bg */}
@@ -33,18 +44,17 @@ export const Hero = () => {
       <div className="absolute inset-0 bg-linear-to-b from-background/20 via-background/80 to-background" />
 
       {/* Green Dot */}
-      <div className="absolute inset-0 overflow-hidden pointer-none:">
-        {[...Array(30)].map((_, i) => (
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {dots.map((dot, i) => (
           <div
+            key={i}
             className="absolute w-1.5 h-1.5 rounded-full opacity-60"
             style={{
               backgroundColor: "#f0f0f0",
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animation: ` slow-drift ${
-                15 + Math.random() * 20
-              }s ease-in-out linear infinite`,
-              animationDelay: `${Math.random() * 5}s`,
+              left: dot.left,
+              top: dot.top,
+              animation: ` slow-drift ${dot.animationDuration} ease-in-out linear infinite`,
+              animationDelay: dot.animationDelay,
             }}
           />
         ))}
@@ -92,7 +102,7 @@ export const Hero = () => {
               >
                 <AnimatedBorderButton>
                   <Download className="w-5 h-5 " />
-                 <span className="cursor-pointer">Download CV</span>
+                  <span className="cursor-pointer">Download CV</span>
                 </AnimatedBorderButton>
               </a>
             </div>
