@@ -5,6 +5,7 @@ import { Projects } from "@/sections/Projects.jsx";
 import { Experience } from "@/sections/Experience.jsx";
 import { Testimonials } from "@/sections/Testimonials.jsx";
 import { Contact } from "@/sections/Contact.jsx";
+import { Footer } from "@/layout/Footer.jsx";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Testimonials />
         <Contact />
       </main>
+      <Footer />
     </div>
   );
 }
