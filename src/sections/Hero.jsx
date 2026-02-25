@@ -84,8 +84,8 @@ export const Hero = () => {
                   Precision.
                 </span>
               </h1>
-              <p className=" text-3xl text-gray-300 max-w-lg animate-fade-in animation-delay-200">
-                Hi I'm Izuchukwu Innocent - a software engineer specializing in
+              <p className=" text-2xl text-gray-300 max-w-lg animate-fade-in animation-delay-200">
+                Hi I'm Izuchukwu Innocent - A software engineer specializing in
                 Javascript, React, Next.js, and TypeScript. I build scalable,
                 performant web applications.
               </p>

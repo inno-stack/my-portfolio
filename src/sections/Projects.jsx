@@ -80,18 +80,44 @@ export const Projects = () => {
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 "
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from via-card/50 to-transparent opacity-60" />
+                <div className="relative group inset-0 bg-gradient-to-t from via-card/50 to-transparent opacity-60" />
+               
                 {/* Overlay Link */}
-                <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div
+                  className="
+    absolute inset-0 
+    flex items-center justify-center gap-4
+    opacity-100 md:opacity-0 
+    md:group-hover:opacity-100
+    transition-opacity duration-300
+  "
+                >
                   <a
                     href={project.link}
-                    className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="
+      p-3 rounded-full 
+      bg-primary/50 backdrop-blur
+      border border-border
+      md:glass md:hover:bg-primary md:hover:text-primary-foreground
+      transition-all
+    "
                   >
                     <ArrowUpRight className="w-5 h-5" />
                   </a>
+
                   <a
                     href={project.github}
-                    className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="
+      p-3 rounded-full 
+      bg-primary/50 backdrop-blur
+      border border-border
+      md:glass md:hover:bg-primary md:hover:text-primary-foreground
+      transition-all 
+    "
                   >
                     <Github className="w-5 h-5" />
                   </a>
