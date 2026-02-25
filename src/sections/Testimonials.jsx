@@ -8,32 +8,28 @@ const testimonials = [
       "Working with Izuchukwu was a smooth experience. He transformed our UI concepts into a fast, responsive web application and paid strong attention to performance and accessibility. His communication and problem-solving skills made delivery faster than expected.",
     author: "Chinedu Okafor",
     role: "Product Manager — SaaS Startup",
-    avatar:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80",
+    avatar: "https://images.unsplash.com/",
   },
   {
     quote:
       "Integration with our APIs was handled professionally. He understood the data flow quickly and built clean, maintainable frontend components. His code structure made collaboration very easy for the team.",
     author: "Aisha Bello",
     role: "Backend Engineer — API Team",
-    avatar:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80",
+    avatar: "https://images.unspla",
   },
   {
     quote:
       "He developed a student results system that simplified our academic record process. The interface was user-friendly and efficient for both staff and students. His technical support and attention to detail were impressive.",
     author: "Michael Eze",
     role: "School Administrator — Education Sector",
-    avatar:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80",
+    avatar: "https://images.unsplash.com/",
   },
   {
     quote:
       "He translates design systems into pixel-perfect interfaces and ensures responsiveness across devices. His understanding of user experience and frontend performance makes him a strong engineer to work with.",
     author: "Grace Nwankwo",
     role: "UI/UX Designer — Product Design Team",
-    avatar:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80",
+    avatar: "https://images.unsplash.com",
   },
 ];
 
@@ -99,7 +95,7 @@ export const Testimonials = () => {
                 <div key={idx} className="w-full flex-shrink-0 px-4">
                   <div className="relative bg-white/5 backdrop-blur-xl border border-white/10 p-10 md:p-14 rounded-3xl shadow-xl">
                     {/* Quote Icon */}
-                    
+
                     <div className=" absolute top-1 left-5 w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-lg">
                       <Quote className="w-4 h-4 text-primary-foreground" />
                     </div>
